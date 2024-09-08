@@ -11,6 +11,15 @@
 <body>
     <!-- navbar -->
     <div id="navbar"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    fetch("./nav.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+});
+    </script>
     <!-- navbar end -->
     <div id="content">
         <div class="movie-container">
