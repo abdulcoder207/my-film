@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    /* background-color: #000; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.baner {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    margin-left: 120;
+    margin-bottom: -10px;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.navbar .brand {
+    margin: 3px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #acacac;
+    font-size: 26px;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff;
+}
+
+/* navbar end */
+
+/* isi */
+
+.logo-container{
+    overflow: hidden;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    /* flex-shrink: 0; */
+    gap: 3rem;
+    padding: 1rem;
+    animation: infinityS 20s linear infinite;
+}
+
+@keyframes infinityS{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

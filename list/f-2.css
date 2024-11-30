@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    overflow-y: auto;
+}
+
+
+.baner {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    margin-bottom: -10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #000000; */
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.navbar .brand {
+    margin: 3px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #acacac;
+    font-size: 26px;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff;
+}
+
+
+/* navbar end */
+.anime-slider {
+    padding: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar (for Firefox) */
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar (for Chrome) */
+}
+
+.rank-card {
+    margin: 10px;
+    border: 2px solid blue;
+    flex: 0 0 auto;
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 15%;
+    height: 500px;
+    box-shadow: 0px 4px 6px rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.rank-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px white;
+}
+
+.rank-image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.rank-info {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: #333;
+}
+
+.rank-title {
+    font-size: 20px;
+    margin: 10px 0 0;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rank-desc{
+    color: #acacac;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* max 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-btn{
+    text-decoration: none;
+    margin: 0 0 8px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.detail-btn:hover {
+    background-color: #0056b3;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media screen and (max-width: 378px) {
+    .baner {
+        height: 200px;
+    }
+
+    .navbar .brand {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 20px;
+    }
+
+    .rank-card {
+        width: 50%;
+        height: 350px;
+    }
+
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .navbar .brand {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 20px;
+    }
+
+    .rank-card {
+        width: 50%;
+        height: 300px;
+    }
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 529px) {
+    .rank-card {
+        width: 50%;
+        /* width: 30%; */
+        height: 300px;
+    }
+
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 639px) {
+    .rank-card {
+        width: 10%;
+        height: 300px;
+    }
+
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 698px) {
+    .rank-card {
+        width: 80%;
+        height: 300px;
+    }
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 798px) {
+    .rank-card {
+        width: 30%;
+        height: 300px;
+        /* height: 400px; */
+    }
+    .rank-title{
+        font-size: 15px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .rank-card {
+        width: 40%;
+        height: 500px;
+    }
+    .rank-title{
+        font-size: 20px;
+    }
+
+    .rank-image{
+        width: 100%;
+        height: 350px;
+    }
+}

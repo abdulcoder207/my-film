@@ -1,254 +1,208 @@
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film</title>
-    <link rel="stylesheet" href="f.css">
+    <link rel="icon" href="../logo-m (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="./f-2.css">
 </head>
 
 <body>
-    <div id="network-loader">
-        <div class="spinner"></div>
-        <p id="loader-message">Checking your connection...</p>
-    </div>
-
     <!-- navbar -->
     <div id="navbar"></div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    fetch("./nav.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar").innerHTML = data;
+            fetch("./nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
         });
-});
     </script>
     <!-- navbar end -->
-    <div id="content">
-        <div class="movie-container">
-            <div class="movie-card">
-                <img src="../images/insidious-chapter-3-2015.jpeg" alt="Insidious Chapter 3 2015" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Insidious Chapter 3 2015</h2>
-                    <p class="movie-description">bercerita tentang seorang gadis yang bernama quin
-                        dan keluarganay yang tinggal di apartemen yang angker </p>
-                    <a href="../component/insidious-chapter-3.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="#" class="movie-button">Klik untuk menonton</a>
+
+    <!-- content -->
+    <section class="anime-slider">
+        <h1 class="section-title">Film Horror</h1>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev-btn prev-btn-1">❮</button>
+            <div class="slider-container slider-container-1">
+                <div class="rank-card">
+                    <img src="../images/insidious-chapter-3-2015.jpeg" alt="Insidious Chapter 3 2015" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Insidious Chapter 3 2015</h3>
+                        <p class="rank-desc">bercerita tentang seorang gadis yang bernama quin
+                            dan keluarganay yang tinggal di apartemen yang angker. </p>
+                        <a href="../component/insidious-chapter-3.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/friday-the-13-th-paet-2.jpg" alt="friday the 13 th part 2" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">friday the 13 th part 2</h3>
+                        <p class="rank-desc">Lima tahun setelah teror di Crystal Lake, legenda Jason Voorhees hidup
+                            kembali. Sekelompok pemuda datang untuk pelatihan konselor di tempat yang sama, mengabaikan
+                            peringatan tentang pembunuhan aneh dan sosok Jason yang dikabarkan masih berkeliaran. </p>
+                        <a href="../component/friday-the-13-th-part-2.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/Friday3.jpg" alt="friday-the-13-th-part-3" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">friday-the-13-th-part-3</h3>
+                        <p class="rank-desc">Kengerian di Crystal Lake belum berakhir. Jason Voorhees kembali dengan
+                            haus darah yang tak terpuaskan. Sekelompok teman mengunjungi rumah pedesaan untuk liburan akhir
+                            pekan yang tenang, namun mimpi buruk segera dimulai saat Jason memulai pembunuhan tanpa ampun.</p>
+                        <a href="../component/friday-the-13-th-part-3.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/Friday_the_13th_The_Final_Chapter.jpg" alt="Friday the 13th The Final Chapter" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Friday the 13th The Final Chapter</h3>
+                        <p class="rank-desc">Crystal Lake kembali dihantui oleh mimpi buruk yang tak berkesudahan.
+                            Jason
+                            Voorhees, sang pembunuh bertopeng, kembali dari kematian untuk meneror sekelompok remaja yang
+                            sedang
+                            berlibur. Kali ini, Jason lebih haus darah dan lebih kejam dari sebelumnya.</p>
+                        <a href="../component/Friday-the-13th-The-Final-Chapter.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/Freddy_vs._Jason_movie.jpg" alt="Freddy vs Jason" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Freddy vs Jason</h3>
+                        <p class="rank-desc">Dua ikon horor terbesar dalam sejarah akhirnya bertemu dalam
+                            pertarungan
+                            epik yang ditunggu-tunggu. Freddy Krueger, penguasa mimpi buruk dari Elm Street, mendapati
+                            dirinya
+                            terlupakan dan kehilangan kekuatannya.</p>
+                        <a href="../component/Friday-Freddy-VS-Jason.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/Friday_the_13th_A_New_Beginning.jpg" alt="Friday the 13th A New Beginning" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Friday the 13th A New Beginning</h3>
+                        <p class="rank-desc">Apakah Jason benar-benar kembali, atau ada kekuatan jahat lain yang
+                            melanjutkan terornya? Dengan ketegangan yang tak terduga dan pembunuhan yang mengerikan, "Friday
+                            the
+                            13th: A New Beginning" membawa kengerian baru yang akan membuatmu merinding. Bersiaplah untuk
+                            babak
+                            baru dalam legenda Jason Voorhees yang mematikan!.</p>
+                        <a href="../component/Friday-the-13th-A-New-Beginning.html" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../images/Friday_the_13th_(1980)_theatrical_poster.jpg" alt="Friday the 13th" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Friday the 13th (1980)</h3>
+                        <p class="rank-desc">Di perkemahan Crystal Lake yang tenang, sebuah legenda menyeramkan akan
+                            segera terungkap. Sekelompok pemuda yang datang untuk musim panas penuh kesenangan berubah
+                            menjadi
+                            mimpi buruk saat mereka mulai diteror oleh pembunuh misterius.</p>
+                        <a href="../component/Friday-the-13th.html" class="detail-btn">Lihat Detail</a>
+                    </div>
                 </div>
             </div>
-            <div class="movie-card">
-                <img src="../images/insidious-the-last-key-2018.jpeg" alt="Insidious The Last Key 2018"
-                    class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Insidious The Last Key 2018</h2>
-                    <p class="movie-description">Bercerita tentang alice yang bertemu dengan adiknya dan adiknya
-                        sedang mencari peluit pemberian ibunya saat masih hidup. </p>
-                    <a href="../component/insidious-the-last-key.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <!-- <img src="https://via.placeholder.com/300x450" alt="Movie Poster" class="movie-poster"> -->
-                <img src="../images/insidious-2010 (1).png" alt="Insidious 2010" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Insidious 2010</h2>
-                    <p class="movie-description">Bercerita tentang seorang anak bernama dalton yang berasal dari
-                        keluarga Pasangan suami istri Josh dan Renai Lambert</p>
-                    <a href="../component/insidious-2010.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/insidious-2.jpeg" alt="Insidious Chapter 2 2013" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Insidious Chapter 2 2013</h2>
-                    <p class="movie-description">Bercerita tentang josh yang menyelamatkan dalton setelah kematian alice
-                    </p>
-                    <a href="../component/insidious-chap-2.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/insidious-the-red-door.jpeg" alt="Insidious The Red Door" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Insidious The Red Door</h2>
-                    <p class="movie-description">Bercerita tentang dalton yang sudah beranjak dewasa
-                        dan menghantui kembali.
-                    </p>
-                    <a href="../component/insidious-the-red-door.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_(1980)_theatrical_poster.jpg" alt="Friday the 13th"
-                    class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th (1980)</h2>
-                    <p class="movie-description">Di perkemahan Crystal Lake yang tenang, sebuah legenda menyeramkan akan
-                        segera terungkap. Sekelompok pemuda yang datang untuk musim panas penuh kesenangan berubah
-                        menjadi
-                        mimpi buruk saat mereka mulai diteror oleh pembunuh misterius.</p>
-                    <a href="../component/Friday-the-13th.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/friday-the-13-th-paet-2.jpg" alt="friday the 13 th part 2" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th part 2</h2>
-                    <p class="movie-description">Lima tahun setelah teror di Crystal Lake, legenda Jason Voorhees hidup
-                        kembali. Sekelompok pemuda datang untuk pelatihan konselor di tempat yang sama, mengabaikan
-                        peringatan tentang pembunuhan aneh dan sosok Jason yang dikabarkan masih berkeliaran. </p>
-                    <a href="../component/friday-the-13-th-part-2.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday3.jpg" alt="friday the 13 th part 3" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th part 3</h2>
-                    <p class="movie-description">Kengerian di Crystal Lake belum berakhir. Jason Voorhees kembali dengan
-                        haus darah yang tak terpuaskan. Sekelompok teman mengunjungi rumah pedesaan untuk liburan akhir
-                        pekan yang tenang, namun mimpi buruk segera dimulai saat Jason memulai pembunuhan tanpa ampun.
-                    </p>
-                    <a href="../component/friday-the-13-th-part-3.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_The_Final_Chapter.jpg" alt="Friday the 13th The Final Chapter"
-                    class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th The Final Chapter</h2>
-                    <p class="movie-description">Crystal Lake kembali dihantui oleh mimpi buruk yang tak berkesudahan.
-                        Jason
-                        Voorhees, sang pembunuh bertopeng, kembali dari kematian untuk meneror sekelompok remaja yang
-                        sedang
-                        berlibur. Kali ini, Jason lebih haus darah dan lebih kejam dari sebelumnya.</p>
-                    <a href="../component/Friday-the-13th-The-Final-Chapter.html" class="movie-button">Lihat Lebih
-                        Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_A_New_Beginning.jpg" alt="Friday the 13th A New Beginning"
-                    class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th A New Beginning</h2>
-                    <p class="movie-description">Apakah Jason benar-benar kembali, atau ada kekuatan jahat lain yang
-                        melanjutkan terornya? Dengan ketegangan yang tak terduga dan pembunuhan yang mengerikan, "Friday
-                        the
-                        13th: A New Beginning" membawa kengerian baru yang akan membuatmu merinding. Bersiaplah untuk
-                        babak
-                        baru dalam legenda Jason Voorhees yang mematikan!</p>
-                    <a href="../component/Friday-the-13th-A-New-Beginning.html" class="movie-button">Lihat Lebih
-                        Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_Part_VI_-_Jason_Lives_(1986)_theatrical.jpg"
-                    alt="Friday the 13th Part VI - Jason Lives (1986) theatrical" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th Part VI - Jason Lives (1986) theatrical</h2>
-                    <p class="movie-description">Para remaja yang datang untuk berlibur segera menemukan diri mereka
-                        dalam
-                        pertarungan hidup dan mati melawan sosok pembunuh yang tak terhentikan. "Friday the 13th Part
-                        VI:
-                        Jason Lives" menghadirkan kembali kengerian legendaris dengan ketegangan yang mendebarkan dan
-                        serangan brutal tanpa henti. Bersiaplah untuk menghadapi teror yang tak pernah mati!</p>
-                    <a href="../component/Friday-the-13th-Part-VI - Jason-Lives-(1986)-theatrical.html"
-                        class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_Part_VII_-_The_New_Blood_(1988)_theatrical.jpg"
-                    alt="Friday the 13th Part VII: The New Blood " class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th Part VII: The New Blood </h2>
-                    <p class="movie-description">Crystal Lake kembali diliputi oleh teror saat Jason Voorhees bangkit
-                        dari
-                        dasar danau. Kali ini, musuhnya adalah Tina Shepard, seorang gadis muda dengan kekuatan
-                        telekinetik
-                        yang tidak terduga. Ketika Tina secara tidak sengaja membangkitkan Jason, pertempuran mematikan
-                        antara kekuatan supranatural dan kebrutalan Jason dimulai.</p>
-                    <a href="../component/Friday-the-13th-Part-VII-The-New Blood.html" class="movie-button">Lihat Lebih
-                        Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday_the_13th_Part_VIII_-_Jason_Takes_Manhattan_(1989)_theatrical.jpg"
-                    alt="Friday the 13th Part VIII - Jason Takes Manhattan (1989) theatrical" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday the 13th Part VIII - Jason Takes Manhattan (1989) theatrical</h2>
-                    <p class="movie-description">Kali ini, Jason Voorhees meninggalkan Crystal Lake dan menuju jantung
-                        kota.
-                        Saat sekelompok siswa menaiki kapal pesiar untuk perjalanan kelulusan mereka ke New York City,
-                        mereka tidak tahu bahwa teror menunggu di lautan.</p>
-                    <a href="../component/Friday-the-13th-Part-VIII-Jason-Takes-Manhattan-(1989)-theatrical.html"
-                        class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Jason_goes_to_hell.jpg" alt="Jason goes to hell" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Jason goes to hell</h2>
-                    <p class="movie-description">Jason Voorhees, sang legenda horor, akhirnya bertemu dengan takdirnya.
-                        Setelah bertahun-tahun meneror Crystal Lake, Jason dihadapkan pada kekuatan yang lebih gelap dan
-                        lebih mematikan dari sebelumnya. </p>
-                    <a href="../component/Friday-Jason-goes-to-hell.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Jason_x.jpg" alt="Jason x" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Jason x</h2>
-                    <p class="movie-description">Di masa depan yang jauh, teror Jason Voorhees tidak berakhir di Crystal
-                        Lake. Setelah dibekukan selama berabad-abad, Jason bangkit kembali di abad ke-25, kali ini di
-                        atas
-                        kapal luar angkasa yang berlayar jauh dari Bumi. Ketika sekelompok peneliti dan tentara
-                        menemukan
-                        tubuh Jason, mereka tidak menyadari bahwa mimpi buruk baru saja dimulai.</p>
-                    <a href="../component/Friday-Jason-X.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Freddy_vs._Jason_movie.jpg" alt="Freddy vs Jason" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Freddy vs Jason</h2>
-                    <p class="movie-description">Dua ikon horor terbesar dalam sejarah akhirnya bertemu dalam
-                        pertarungan
-                        epik yang ditunggu-tunggu. Freddy Krueger, penguasa mimpi buruk dari Elm Street, mendapati
-                        dirinya
-                        terlupakan dan kehilangan kekuatannya.</p>
-                    <a href="../component/Friday-Freddy-VS-Jason.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
-            <div class="movie-card">
-                <img src="../images/Friday-the-13-th.jpeg" alt="Friday The 13 TH" class="movie-poster">
-                <div class="movie-info">
-                    <h2 class="movie-title">Friday The 13 TH</h2>
-                    <p class="movie-description">Di balik pepohonan Crystal Lake yang tenang, legenda horor yang paling
-                        menakutkan siap untuk dibangkitkan kembali.</p>
-                    <a href="../component/Friday-the-13th-2009.html" class="movie-button">Lihat Lebih Detail</a>
-                    <a href="" class="movie-button">Klik untuk menonton</a>
-                </div>
-            </div>
+            <button class="slider-btn next-btn next-btn-1">❯</button>
         </div>
-    </div>
-    <!-- footer -->
-    <div id="content-placeholder"></div>
-    <!-- footer end -->
+    </section>
+
+    <section class="anime-slider">
+        <h1 class="section-title">Anime</h1>
+        <div class="slider-wrapper">
+            <button class="slider-btn prev-btn prev-btn-2">❮</button>
+            <div class="slider-container slider-container-2">
+                <div class="rank-card">
+                    <img src="../image/anime/one-piece-image/one-piece.webp" alt="One Piece" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">One Piece</h3>
+                        <p class="rank-desc">One Piece menceritakan tentang petualangan seorang anak bernama Monkey D. Luffy yang bercita-cita menjadi raja bajak laut dan menemukan "One Piece" setelah terinspirasi oleh Shanks.</p>
+                        <a href="#" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/dan-da-dan.webp" alt="Dan Da Dan" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">DAN DA DAN</h3>
+                        <p class="rank-desc">Gadis SMA keturunan keluarga cenayang, Momo (Ayase Momo) dan teman sekelasnya yang maniak okultisme, Okarun (Takakura Ken).</p>
+                        <a href="" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/bluelock-vs-u-20-japan.webp" alt="Blue Lock" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Blue Lock VS. U-20 Japan</h3>
+                        <p class="rank-desc">Pria berambut oren, Ichigo Kurosaki, adalah murid SMA dengan rasa keadilan yang kuat. Dia tinggal dengan ayah dan dua adiknya.</p>
+                        <a href="#" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-bleach/seri-bleach.webp" alt="Bleach" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">BLEACH</h3>
+                        <p class="rank-desc">Perang berdarah antara Shinigami dan Quincy semakin meningkat setelah gelombang kedua serangan Wandenreich mengubah Seireitei menjadi dimensi yang dikenal sebagai Schatten Bereich</p>
+                        <a href="#" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-bleach/Thousand-Year-Blood-War.webp" alt="Bleach" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">BLEACH: Thousand-Year Blood War</h3>
+                        <p class="rank-desc">Perang berdarah antara Shinigami dan Quincy semakin meningkat setelah gelombang kedua serangan Wandenreich mengubah Seireitei menjadi dimensi yang dikenal sebagai Schatten Bereich</p>
+                        <a href="#" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-naruto/naruto.webp" alt="Naruto" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Naruto</h3>
+                        <p class="rank-desc">Uzumaki Naruto, protagonis yang bercita-cita menjadi ninja,  berhasil membangkitkan kekuatannya berkat aksi guru Umino Iruka yang melindunginya, </p>
+                        <a href="" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-naruto/naruto-shipuden.webp" alt="Naruto" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Naruto Shippuden</h3>
+                        <p class="rank-desc">Di Desa Konoha, saat di mana pahatan batu wajah Tsunade telah bertambah di tebingnya, Pasukan Konohamaru yang telah tumbuh menjadi genin.</p>
+                        <a href="#" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-naruto/Boruto-the-next-generation.webp" alt="Boruto" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Boruto: Naruto Next Generation</h3>
+                        <p class="rank-desc">Desa Konohagakure, yang menjalani modernisasi mengikuti waktu yang damai. Boruto, putra Uzumaki Naruto, Hokage ke-7.</p>
+                        <a href="" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/opm/one-punch-man.webp" alt="one-piece-image" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">One Punch Man</h3>
+                        <p class="rank-desc">Saitama yang menjadi Pahlawan sebagai hobi, menjadi terlalu kuat sehingga setiap monster yang dia hadapi musnah hanya dengan satu pukulan.</p>
+                        <a href="" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="rank-card">
+                    <img src="../image/anime/seri-jutjusu-kaisen/jujutsu-kaisen.webp" alt="jutjusu-kaisen-image" class="rank-image">
+                    <div class="rank-info">
+                        <h3 class="rank-title">Jujutsu Kaisen</h3>
+                        <p class="rank-desc">Di dunia di mana para iblis memakan manusia yang tak sadar dirinya menjadi mangsa, serpihan dari iblis legendaris dan paling ditakuti, Ryoumen Sukuna telah hilang tanpa jejak.</p>
+                        <a href="" class="detail-btn">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next-btn next-btn-2">❯</button>
+        </div>
+    </section>
+    <!-- content end -->
 
     <!-- footer -->
+    <div id="content-placeholder"></div>
     <script src="./f.js"></script>
     <script src="./main.js"></script>
 </body>

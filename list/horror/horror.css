@@ -235,6 +235,11 @@ body {
     padding: 20px;
 }
 
+.logo{
+    width: 30%;
+    mix-blend-mode: screen;
+}
+
 .footer-section {
     flex: 1;
     padding: 20px;
