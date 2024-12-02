@@ -82,11 +82,13 @@ body {
     scroll-behavior: smooth;
     gap: 20px;
     padding: 10px;
-    scrollbar-width: none; /* Hide scrollbar (for Firefox) */
+    scrollbar-width: none;
+    /* Hide scrollbar (for Firefox) */
 }
 
 .slider-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar (for Chrome) */
+    display: none;
+    /* Hide scrollbar (for Chrome) */
 }
 
 .rank-card {
@@ -131,7 +133,7 @@ body {
     text-overflow: ellipsis;
 }
 
-.rank-desc{
+.rank-desc {
     color: #acacac;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -141,7 +143,7 @@ body {
     text-overflow: ellipsis;
 }
 
-.detail-btn{
+.detail-btn {
     text-decoration: none;
     margin: 0 0 8px;
     display: flex;
@@ -203,17 +205,17 @@ body {
         height: 350px;
     }
 
-    .rank-title{
+    .rank-title {
         font-size: 15px;
     }
 
-    .rank-image{
+    .rank-image {
         width: 100%;
         height: 150px;
     }
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 498px) {
     .navbar .brand {
         font-size: 20px;
     }
@@ -226,85 +228,80 @@ body {
         width: 50%;
         height: 300px;
     }
-    .rank-title{
+
+    .rank-title {
         font-size: 15px;
     }
 
-    .rank-image{
+    .rank-image {
         width: 100%;
         height: 150px;
     }
 }
+
 @media screen and (max-width: 529px) {
-    .rank-card {
-        width: 50%;
-        /* width: 30%; */
-        height: 300px;
-    }
-
-    .rank-title{
-        font-size: 15px;
-    }
-
-    .rank-image{
-        width: 100%;
-        height: 150px;
-    }
-}
-@media screen and (max-width: 639px) {
-    .rank-card {
-        width: 10%;
-        height: 300px;
-    }
-
-    .rank-title{
-        font-size: 15px;
-    }
-
-    .rank-image{
-        width: 100%;
-        height: 150px;
-    }
-}
-@media screen and (max-width: 698px) {
-    .rank-card {
-        width: 80%;
-        height: 300px;
-    }
-    .rank-title{
-        font-size: 15px;
-    }
-
-    .rank-image{
-        width: 100%;
-        height: 150px;
-    }
-}
-@media screen and (max-width: 798px) {
-    .rank-card {
-        width: 30%;
-        height: 300px;
-        /* height: 400px; */
-    }
-    .rank-title{
-        font-size: 15px;
-    }
-
-    .rank-image{
-        width: 100%;
-        height: 250px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .rank-card {
-        width: 40%;
-        height: 500px;
-    }
-    .rank-title{
+    .navbar .brand {
         font-size: 20px;
     }
 
-    .rank-image{
+    .navbar .nav-links a {
+        font-size: 20px;
+    }
+
+    .rank-card {
+        flex: 0 0 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+    .rank-title {
+        font-size: 15px;
+    }
+
+    .rank-image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .rank-card {
+        width: 30%;
+        height: 300px;
+    }
+
+    .rank-title {
+        font-size: 15px;
+    }
+
+    .rank-image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .rank-card {
+        flex: 0 0 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+    .rank-image {
+        width: 100%; /* Gambar mengikuti lebar kartu */
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rank-card {
+        width: 30%;
+        height: 500px;
+    }
+
+    .rank-title {
+        font-size: 20px;
+    }
+
+    .rank-image {
         width: 100%;
         height: 350px;
     }
