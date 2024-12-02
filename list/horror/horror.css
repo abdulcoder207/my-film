@@ -52,6 +52,31 @@ body {
     color: #007bff;
 }
 
+.serach-container{
+    margin: 5px;
+    position: relative;
+}
+
+.search-btn{
+    width: 50%;
+    height: 40px;
+    background-color: #0056b3;
+}
+
+.search-btn:hover{
+    background-color: #007bff;
+}
+
+.search-input{
+    margin: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.search-input:hover{
+    border: 1px solid #007bff;
+}
+
 
 /* navbar responsive */
 
