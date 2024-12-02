@@ -252,6 +252,32 @@ body {
         flex: 0 0 calc(50% - 16px);
         max-width: calc(50% - 16px);
     }
+
+    .rank-title {
+        font-size: 15px;
+    }
+
+    .rank-image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    .navbar .brand {
+        font-size: 20px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 20px;
+    }
+
+    .rank-card {
+        flex: 0 0 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+        height: auto;
+    }
+
     .rank-title {
         font-size: 15px;
     }
@@ -286,7 +312,8 @@ body {
     }
 
     .rank-image {
-        width: 100%; /* Gambar mengikuti lebar kartu */
+        width: 100%;
+        /* Gambar mengikuti lebar kartu */
         height: auto;
     }
 }
