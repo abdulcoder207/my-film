@@ -64,7 +64,7 @@ body {
 
 .logo{
     display: flex;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
     gap: 3rem;
     padding: 1rem;
     animation: infinityS 20s linear infinite;

@@ -1,3 +1,3 @@
-const logo = document.querySelector(".logo").cloneNode(true);
+const logo = document.querySelector(".logo").cloneNode(true)
 
-document.querySelector(".logo-container").appendChild(logo);
+document.querySelector(".logo-container").appendChild(logo)
